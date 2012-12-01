@@ -24,20 +24,18 @@ Steps to get it up and running:
 2. Install Vagrant from here:
 http://downloads.vagrantup.com/tags/v1.0.5  or as a ruby gem: gem
 install vagrant
-3. Add amberbox Vagrant box to your local library of boxes:
+3. Add amberbox Vagrant box to your local library of boxes
 
-    $ vagrant box add amberbox https://github.com/downloads/amberbit/amberbox/amberbox.box
-    
-    This requires downloading 829 MB box file. After this step, you
-    
+    $ vagrant box add amberbox https://github.com/downloads/amberbit/amberbox/amberbox.box    
+
+This requires downloading 829 MB box file. After this step, you should   
 have 'amberbox' box installed in your system, and you can init
 your development boxes from it.
 
-4. Create virtual machine for your project:
+4. Create virtual machine for your project
 
 
      $ mkdir my_project_name && cd my_project_name
-      
      $ vagrant init --box amberbox
     
 
@@ -50,7 +48,7 @@ Modifying Vagrantfile:
 
 The box has defaults that might not suit you. For example, it gives by
 default up to 2GB of your RAM for the VM. Settings I customized, that
-you most likely want to tweak in Vagrantfile are:
+you most likely want to tweak in Vagrantfile are
 
     config.vm.customize ["modifyvm", :id, "--memory", 2048]
     config.vm.network :hostonly, "192.168.33.3"
