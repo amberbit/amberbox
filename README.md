@@ -35,11 +35,8 @@ your development boxes from it.
 4. Create virtual machine for your project
 
 
-     $ mkdir my_project_name && cd my_project_name && vagrant init amberbox
-    
-
-settings, IP address etc.
-
+     $ mkdir my_project_name && cd my_project_name
+     $ vagrant init amberbox
      $ vagrant up
      $ vagrant ssh
 
