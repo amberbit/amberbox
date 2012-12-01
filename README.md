@@ -27,8 +27,9 @@ install vagrant
 3. Add amberbox Vagrant box to your local library of boxes:
 
     $ vagrant box add amberbox https://github.com/downloads/amberbit/amberbox/amberbox.box
-
+    
     This requires downloading 829 MB box file. After this step, you
+    
 have 'amberbox' box installed in your system, and you can init
 your development boxes from it.
 
@@ -48,7 +49,16 @@ The box has defaults that might not suit you. For example, it gives by
 default up to 2GB of your RAM for the VM. Settings I customized, that
 you most likely want to tweak in Vagrantfile are:
 
-  config.vm.customize ["modifyvm", :id, "--memory", 2048]
-  config.vm.network :hostonly, "192.168.33.3"
-  config.ssh.forward_x11 = true
-  config.vm.forward_port 3000, 3000
+    config.vm.customize ["modifyvm", :id, "--memory", 2048]
+    config.vm.network :hostonly, "192.168.33.3"
+    config.ssh.forward_x11 = true
+    config.vm.forward_port 3000, 3000
+    
+    
+Credits
+=======
+
+Brought to you by AmberBit Ruby on Rails development team (http://www.amberbit.com).
+
+Based on Vagrant box: https://dl.dropbox.com/u/1543052/Boxes/UbuntuServer12.04amd64.box
+Get more boxes from: http://vagrantbox.es
