@@ -37,7 +37,6 @@ your development boxes from it.
     $ mkdir my_project_name && cd my_project_name
     $ vagrant init amberbox
 
-    # Optional: edit Vagrantfile, for example to modify virtual memory
 settings, IP address etc.
 
     $ vagrant up
