@@ -24,7 +24,7 @@ Steps to get it up and running:
 2. Install Vagrant from here:
 http://downloads.vagrantup.com/tags/v1.0.5  or as a ruby gem: gem
 install vagrant
-3. Add amberbit-dev Vagrant box to your local library of boxes:
+3. Add amberbox Vagrant box to your local library of boxes:
 
     $ vagrant box add amberbox https://github.com/downloads/amberbit/amberbox/amberbox.box
 
